@@ -1,0 +1,58 @@
+<h1>Categories</h1>
+<div class="card-top container-fluid">
+  <div class="container d-flex">
+    <div class="item" (click)="showCategory('top_offers')">
+      <a >
+        <img class="img-container" src="https://cdn.iconscout.com/icon/premium/png-256-thumb/open-box-1514821-1285741.png" alt="">
+        <h4>Top Offers</h4>
+      </a>
+    </div>
+    <div class="item"  (click)="showCategory('laptop')">
+      <a >
+        <img class="img-container" src="https://cdn.reinisfischer.com/sites/default/files/upload/1_113.jpg" alt="">
+        <h4>Electronics</h4>
+      </a>
+    </div>
+    <div class="item"  (click)="showCategory('mobile_phones')">
+      <a >
+        <img class="img-container" src="assets/iphone13.jpg" alt="">
+        <h4>Mobile Phones</h4>
+      </a>
+    </div>
+    <div class="item"  (click)="showCategory('games')">
+      <a >
+        <img class="img-container" src="assets/GtaV.webp" alt="">
+        <h4>Games</h4>
+      </a>
+    </div>
+    <div class="item" (click)="showCategory('fashion')">
+      <a >
+        <img class="img-container" src="data:image/jpeg;base64,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" alt="">
+        <h4>Fashion</h4>
+      </a>
+    </div>
+    <div class="item" (click)="showCategory('Watch')">
+      <a >
+        <img class="img-container" src="https://cdn.shopify.com/s/files/1/0137/0292/2286/products/1_8ba02f4a-9e30-4d06-9b37-fe825036ffaa_400x.png?v=1645170761" alt="">
+        <h4>Smart Watches</h4>
+      </a>
+    </div>
+  </div>
+</div>
+  <div>
+  </div>
+<h1>Products</h1>
+<div class="container">
+  <div class="row">
+    <ng-container *ngFor="let item of productList">
+      <div class="card col-md-2">
+        <i class='fas fa-heart' style='font-size:20px;color:red;text-align:right' (click)=addToWishlist(item) *ngIf="confirmRole()"></i>
+        <img src="/assets/{{item.imageURL}}" alt="">
+        <h5 style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.name}}</h5>
+        <p style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.description}}</p>
+        <p><strong>Price:</strong>₹{{item.price}}</p>
+        <button *ngIf="confirmRole()" class="btn btn-primary" (click)=addtoCart(item)>Add To Cart</button>
+    </div>
+    </ng-container>
+  </div>
+</div>

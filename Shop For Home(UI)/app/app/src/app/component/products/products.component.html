@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row">
+      <ng-container *ngFor="let item of productList">
+        <div class="card col-md-2">
+          <i class='fas fa-heart' style='font-size:20px;color:red;text-align:right' (click)=addToWishlist(item) *ngIf="confirmRole()"></i>
+          <img src="/assets/{{item.imageURL}}" alt="">
+          <h5 style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.name}}</h5>
+          <p style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.description}}</p>
+          <p><strong>Price:</strong>₹{{item.price}}</p>
+          <button *ngIf="confirmRole()" class="btn btn-primary" (click)=addtoCart(item)>Add To Cart</button>
+      </div>
+      </ng-container>
+    </div>
+  </div>
